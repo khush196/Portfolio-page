@@ -1,0 +1,316 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #ecf0f1;
+    background: linear-gradient(120deg, #1e1e2f, #121212);
+    /* Dark gradient background */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #f1c40f;
+    /* Golden yellow for headings */
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header {
+    background: linear-gradient(45deg, #050a24, #2c3e50);
+    /* Gradient header */
+    color: #fff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(71, 72, 80, 0.378);
+    /* animation: slideIn 1.5s ease-in-out; */
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 85px;
+    width: 85px;
+}
+
+.logo p {
+    margin-left: 1rem;
+    text-decoration:underline;
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+}
+
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #121212;
+    /* Solid dark section */
+    animation: fadeInUp 1s ease-in-out;
+
+}
+
+#aboutPara {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #bdc3c7;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#skills {
+    background: linear-gradient(120deg, #34495e, #2c3e50);
+    /* Subtle gradient */
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+    text-decoration: none;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Optional: Allows wrapping if items overflow */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds space between the items */
+    margin-top: 20px;
+    
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: linear-gradient(45deg, #60a3c8, #21659c);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.skill img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.skill span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #21659c, #60a3c8); /* Reverse the gradient on hover for a dynamic effect */
+}
+
+
+
+
+.skill a{
+    text-decoration: none;
+    color: black;
+    margin-left: 18px;
+   
+}
+
+.skill img{
+    border-radius: 5px;
+    height: 35px;
+    width: 36px;
+    margin-left: 0px;
+}
+
+.skill:hover {
+    background: linear-gradient(45deg, #152f6d, #19415a);
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#projects {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.project-card {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h2 {
+    color: #f1c40f;
+}
+
+.project-card a {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #1abc9c;
+    transform: scale(1.1);
+}
+
+#contact {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    /* Deep gradient for contact section */
+    color: #ecf0f1;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background: #1e1e2f;
+    font-size: 16px;
+    color: #ecf0f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+button {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #c0392b, #a93226);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: linear-gradient(120deg, #1e1e2f, #121212);
+    color: #bdc3c7;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        max-width: 90%;
+    }
+}
